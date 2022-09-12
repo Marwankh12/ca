@@ -15,6 +15,8 @@
 <center><h1>Casher System</h1></center>
 <br>
 <center><h2>Drinking Department</h2></center>
+<h3 style="color:white;"></h3>
+<b style="color: #fff;"></b>
     </div>
 <div class="flexr">
     <!-- start products -->
@@ -29,7 +31,7 @@
           <h5>Price: <span class="prc1">5 </span>EGP</h5>
           <i class="fa-solid fa-check  " id="cart1" style="color:white;height:30px;width:30px;position:absolute;background-color:rgb(22,160,106);border-radius:50%;border:2px solid #111;top:-9px;right:-10px;transition:0.4s;"></i>
                    <div class="btn btn-success submit">Submit</div> 
-
+                   <div class = 'btn btn-danger ms-5' id="cancel1">Cancel</div>
         </div>
         
         </div>
@@ -44,7 +46,7 @@
           <h5>Price: <span class="prc2">50</span> EGP</h5>
           <i class="fa-solid fa-check " id="cart2" style="color:white;height:30px;width:30px;position:absolute;background-color:rgb(22,160,106);border-radius:50%;border:2px solid #111;top:-9px;right:-10px;transition:0.4s;"></i>
                    <div class="btn btn-success submit">Submit</div> 
-
+                   <div class = 'btn btn-danger ms-5' id="cancel2">Cancel</div>
         </div>
         </div>
         
@@ -58,7 +60,7 @@
           <h5>Price: <span class="prc3">15</span> EGP</h5>
           <i class="fa-solid fa-check " id="cart3" style="color:white;height:30px;width:30px;position:absolute;background-color:rgb(22,160,106);border-radius:50%;border:2px solid #111;top:-9px;right:-10px;transition:0.4s;"></i>
           <div class="btn btn-success submit">Submit</div> 
-
+          <div class = 'btn btn-danger ms-5' id="cancel3">Cancel</div>
         </div>
         </div>
         
@@ -72,7 +74,7 @@
           <h5>Price: <span class="prc4">10</span> EGP</h5>
           <i class="fa-solid fa-check " id='cart4' style="color:white;height:30px;width:30px;position:absolute;background-color:rgb(22,160,106);border-radius:50%;border:2px solid #111;top:-9px;right:-10px;transition:0.4s;"></i>
                    <div class="btn btn-success submit">Submit</div> 
-
+                   <div class = 'btn btn-danger ms-5' id="cancel4">Cancel</div>
         </div>
         </div>
     <div class="card" style="width: 16rem;">
@@ -85,7 +87,7 @@
           <h5>Price: <span class="prc5">10</span> EGP</h5>
           <i class="fa-solid fa-check " id="cart5" style="color:white;height:30px;width:30px;position:absolute;background-color:rgb(22,160,106);border-radius:50%;border:2px solid #111;top:-9px;right:-10px;transition:0.4s;"></i>
                    <div class="btn btn-success submit">Submit</div> 
-
+                   <div class = 'btn btn-danger ms-5' id="cancel5">Cancel</div>
         </div>
         </div>
     <div class="card" style="width: 16rem;">
@@ -98,7 +100,7 @@
           <h5>Price: <span class="prc6">5 </span>EGP</h5>
           <i class="fa-solid fa-check " id="cart6" style="color:white;height:30px;width:30px;position:absolute;background-color:rgb(22,160,106);border-radius:50%;border:2px solid #111;top:-9px;right:-10px;transition:0.4s;"></i>
                    <div class="btn btn-success submit">Submit</div> 
-
+                   <div class = 'btn btn-danger ms-5' id="cancel6">Cancel</div>
         </div>
         </div>
     <div class="card" style="width: 16rem;">
@@ -111,7 +113,7 @@
           <h5>Price: <span class="prc7">5 </span>EGP</h5>
           <i class="fa-solid fa-check " id="cart7" style="color:white;height:30px;width:30px;position:absolute;background-color:rgb(22,160,106);border-radius:50%;border:2px solid #111;top:-9px;right:-10px;transition:0.4s;"></i>
                    <div class="btn btn-success submit">Submit</div> 
-
+                   <div class = 'btn btn-danger ms-5' id="cancel7">Cancel</div>
         </div>
         </div>
     <div class="card" style="width: 16rem;">
@@ -123,13 +125,13 @@
           <b class="btn btn-primary sub">add</b>
           <h5 class="price">Price: <span class="prc8">5 </span>EGP</h5>
           <i class="fa-solid fa-check " id="cart8" style="color:white;height:30px;width:30px;position:absolute;background-color:rgb(22,160,106);border-radius:50%;border:2px solid #111;top:-9px;right:-10px;transition:0.4s;"></i>
-         <div class="btn btn-success submit">Submit</div> 
+         <div class="btn btn-success submit">Submit</div>  <div class = 'btn btn-danger ms-5' id="cancel8">Cancel</div>
         </div>
         </div>
         
 <!-- End products -->
 </div>
-
+<div class="proceed"><div class="btn btn-success " id="procced">Procced</div></div>
   
     <style>
         body{
@@ -140,20 +142,11 @@
             color: white;
         }
 h2{
-    color: rgb(0 255 155 / 85%);
+    color: rgb(0, 120, 233);
     position: relative;
     margin-bottom: 30px;
 }
-h2::before{
-    content: '';
-    position: absolute;
-    height: 2px;
-    width: 120px;
-    background-color: rgb(0, 120, 233);
-    left: 50%;
-    transform: translate(-50%,-50%);
-    bottom: -9px;
-}
+
 
 .flexr{
     display: flex;
@@ -174,36 +167,22 @@ width: 120px;
 .card{
     position: relative;
 }
-
+.proceed {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color: rgba(238, 238, 238, 0.822);
+    margin-bottom: 20px;
+    justify-content: end;
+}
+.proceed #procced{
+    margin-right: 20px;
+}
 
     </style>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
-    <script>
- let prices = [5,50,15,10,10,5,5,5]
-
-let inputs = document.querySelectorAll('.card .card-body input')   
-let prc = document.querySelectorAll('.card h5 span')
-let add = document.querySelectorAll('.card .sub')
-let submit = document.querySelectorAll('.card .submit')
-let card = document.querySelectorAll('.card')
-function handle_checking(){
-   for(let i= 0; i<9; i++){
-
-        add[i].onclick = function(){
-            prc[i].innerHTML = prices[i] * inputs[i].value
-        }
+    <script src='system.js'></script>
     
-} 
-}
-handle_checking()
-
-
-for(let i= 0; i<9; i++){
-    const el = document.getElementById('cart'+i);
-    el.remove().remove().remove()
-}
-
-    </script>
 </body>
 </html>
